@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+- '8'
+sudo: required
+env:
+- CXX=g++-4.9
+addons:
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    packages:
+    - g++-4.9
+deploy:
+  provider: npm
+  email: marvin@luchs.org
+  api_key:
+    secure: UnxKKLygjul3B6pzIpgdqPLHf1i+ER6/bIopeZqpQTCUVf9p89DS4VyZ5C/Xzsv7fpoQb8EG22mw1wBcCX6b0ZSwnbgXQeaYcExBY8mx6+i83yse2GIGxvdUQjqG0jDaPt3cCRVrI8espCBfp4njzVyRPrcZKu4nISXIFTvUwORUmudyUZJQy3oCwP6gn0FTbAzKckQgxgCYlpIh/6P4ns7U6cqL6oLgEbwVMMufsCpcXqUHjAe4s4KMRgtaHcJTbK+IruIvc4d5NxsulplUML7YqWCdNhGeh8eT/DGc716Lbd1RstBk0PA2Rn9R/4+zO7I/T7miXE7DY0UhKHfbES87FRmyKKhHkQJnFk7yyvwA2JIJnIBX1KKW+Whelfg6qG+0pyYQXfFwbA3pTQtTxQ0R0fN39BLw4IA9H+HL+krK64yHVXAJU7xIPmEH6KT92dqJ8J97KS1vJsZOLJX7gJfCvC0cngCchttEPW6YByF5TZv5rnOoXRvddZ/rLAtOEnuwxIkx+D7pSGQsmY6nw7RvlF/87TD7eeJH7BDgsn0QCHPhB8WYcuBYVEFiQ7UY94aYW9zTY2Be3nGARR5mpkWo7dKqnzHkVqkz/mCzFLOQDmxn8iy550ji24ZjHFshhCeexB/ro0wsbmgAZ2Yg1VOcu4zzrnaKlztMZUaGVWg=
